@@ -7,99 +7,122 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="main.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#navbar1" data-offset="100">
+<body>
   <!--タイトル-->
   <header>
     <div class="header-wrapper">
-      <div class="header-content">
-        <div class="header-logo">
-          <h1>RAN SATO</h1>
-        </div>
-        <nav class="header-gnav">
-          <ul class="top-menu">
-            <li><a href="#">about</a></li>
-            <li><a href="#">works</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </nav>
+      <div class="header-logo">
+        <a href="#">RAN SATO</a>
       </div>
+      <nav class="header-menu">
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#works">works</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <!--写真-->
-  <section>
-    <img src="berlin_am_Fluss.jpg" class="top-image">
+  <section class="image">
+    <div class="image1">
+      <img src="berlin_am_Fluss.jpg" class="berlin" alt="berlin">
+    </div>
+    <div class="image2">
+      <img src="berlin_schwarzweiss.jpg" class="berlin2" alt="berlin2">
+    </div>
   </section>
 
   <!--アバウト-->
-  <section class="about">
+  <section class="about" id="about">
     <h2>about</h2>
     <div class="about-container">
       <div class="about-image">
-        <img src="astro.png" alt="mypic">
+        <img src="mypic_round.png" alt="mypic">
       </div>
       <div class="introduce">
-        <p>佐藤蘭</p>
+        <p>佐藤 蘭</p>
         <p>1992/01/04</p>
-        <p>秋田県横手市生まれ、同市育ち。</p>
-        <p>特技は書道と、ドイツ語。</p>
+        <p>秋田県横手市生まれ同市育ち。</p>
+        <p>特技は書道とドイツ語。</p>
         <p>ベルリン・テクノ・緑地巡りが大好きです。</p>
       </div>
     </div>
   </section>
 
   <!--作品-->
-  <section class="works-wrapper">
+  <section class="works-wrapper" id="works">
     <h2>works</h2>
     <div class="works-container">
-      <div class="item">
-        <p>ポートフォリオサイト</p>
-        <img src="サムネイル.png" alt="サムネイル１">
-      </div>
-      <div class="item">
+      <a href="#" class="item">
+        <p>Portfolio</p>
+        <div class="thumbnail">
+          <img src="thumbnail.png" alt="thumbnail1">
+        </div>
+      </a>
+      <a class="item">
         <p>coming soon...</p>
-        <img src="サムネイル.png" alt="サムネイル２">
-      </div>
+        <div class="thumbnail">
+          <img src="thumbnail.png" alt="thumbnail2">
+        </div>
+      </a>
     </div>
   </section>
 
   <!--コンタクト-->
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2>contact</h2>
     <form class="form-horizontal">
 
       <div class="form-group">
-        <label class="col-md-3 control-label">お名前</label>
-        <div class="col-md-7">
+        <label class="col-sm-3 control-label">お名前</label>
+        <div class="col-sm-7">
           <input type="text" class="form-control">
         </div>
       </div>
 
       <div class="form-group">
-        <label class="col-md-3 control-label">メールアドレス</label>
-        <div class="col-md-7">
+        <label class="col-sm-3 control-label">メールアドレス</label>
+        <div class="col-sm-7">
           <input type="email" class="form-control">
         </div>
       </div>
 
       <div class="form-group">
-        <label class="col-md-3 control-label">お問い合わせ内容</label>
-        <div class="col-md-7">
+        <label class="col-sm-3 control-label">お問い合わせ内容</label>
+        <div class="col-sm-7">
           <textarea rows="5" name="inquiries" class="form-control"></textarea>
         </div>
       </div>
+
+      <div class="form-group">
+        <button class="btn btn-default" type="submit">送信</button>
+      </div>
     </form>
+    <div class="icons">
+      <a href="https://twitter.com/mmykt2"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+      <span class="fa fa-instagram" aria-hidden="true"></span>
+      <span class="fa fa-github" aria-hidden="true"></span>
+    </div>
   </section>
+
   <footer>
-    <ul class="menu">
-      <li><a href="#">about</a></li>
-      <li><a href="#">works</a></li>
-      <li><a href="#">contact</a></li>
+    <div class="copyright">
+      <small>&copy; 2019 satoran</small>
+    </div>
+    <!-- 横幅が狭い時に出るボトムメニュー -->
+    <ul class="bottom-menu">
+      <li><a href="#about">about</a></li>
+      <li><a href="#works">works</a></li>
+      <li><a href="#contact">contact</a></li>
     </ul>
   </footer>
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
